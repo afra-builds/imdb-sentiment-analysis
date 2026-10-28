@@ -1,0 +1,22 @@
+# IMDb Sentiment Analysis — Results
+
+**Dataset:** IMDb 50K Movie Reviews  
+**Dataset Source:** https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+**Data after cleaning:** 49,582 reviews  
+**Training reviews:** 39,665  
+**Testing reviews:** 9,917  
+
+**Model:** Multinomial Naive Bayes  
+**Text Vectorization:** CountVectorizer  
+**Maximum Features:** 20,000  
+**Test Accuracy:** 85.19%
+
+**Incorrect Predictions:** 1,469
+
+**Prediction Function Tests:**
+1. Positive review → positive
+2. Negative review → negative
+3. Empty review → Please enter a review!
+
+**Limitations:** The model may misclassify reviews containing sarcasm, mixed opinions, or complex language. The accuracy is based on this particular test split.
