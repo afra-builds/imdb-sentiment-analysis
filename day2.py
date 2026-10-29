@@ -110,5 +110,10 @@ print(predict_sentiment(
 ))
 
 print(predict_sentiment(""))
+import joblib
 
+joblib.dump(model, "sentiment_model.pkl")
+joblib.dump(vectorizer, "vectorizer.pkl")
+
+print("Model and vectorizer saved successfully!")
 
